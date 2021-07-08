@@ -359,6 +359,19 @@
     General
   </a>
   
+    <nav class="md-nav" aria-label="General">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#demo-video" class="md-nav__link">
+    Demo video:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -373,6 +386,19 @@
     Configuration
   </a>
   
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#config-breakdown" class="md-nav__link">
+    Config breakdown:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -380,12 +406,38 @@
     Exports
   </a>
   
+    <nav class="md-nav" aria-label="Exports">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getplayerperms" class="md-nav__link">
+    getPlayerPerms
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#events" class="md-nav__link">
     Events
   </a>
+  
+    <nav class="md-nav" aria-label="Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setperms" class="md-nav__link">
+    setPerms
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -436,6 +488,19 @@
     General
   </a>
   
+    <nav class="md-nav" aria-label="General">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#demo-video" class="md-nav__link">
+    Demo video:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -450,6 +515,19 @@
     Configuration
   </a>
   
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#config-breakdown" class="md-nav__link">
+    Config breakdown:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -457,12 +535,38 @@
     Exports
   </a>
   
+    <nav class="md-nav" aria-label="Exports">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getplayerperms" class="md-nav__link">
+    getPlayerPerms
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#events" class="md-nav__link">
     Events
   </a>
+  
+    <nav class="md-nav" aria-label="Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setperms" class="md-nav__link">
+    setPerms
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -486,11 +590,296 @@
                   <h1>vPerms</h1>
                 
                 <h2 id="general">General<a class="headerlink" href="#general" title="Permanent link">&para;</a></h2>
-<p>vPerms is a real time permission system utilizting <a href="https://github.com/VikingTheDev/vDiscord">vDiscord</a>. The script was originally created by SpaceTheDev (<a href="">forums</a>, <a href="">github</a>)</p>
+<p>vPerms is a real time permission system utilizting <a href="https://github.com/VikingTheDev/vDiscord">vDiscord</a>. The script was originally created by SpaceTheDev (<a href="https://forum.cfx.re/u/space_man">forums</a>, <a href="https://github.com/SpaceTheDev">github</a>), so if you enjoy the script please show him some love. The only changes I have made to the script is adding some additional customizability in terms of the role hierarchy (adding subcategories), and making some minor changes to make it work with <code>vDiscord</code>. Check out the original release <a href="https://forum.cfx.re/t/release-sperms-real-time-discord-perms/1686063">here</a>.</p>
+<p>The script is event based, meaning that it allows for real-time roles (no need for relogging or restarting the server for perms to update!). The perms are based on discord roles.</p>
+<h3 id="demo-video">Demo video:<a class="headerlink" href="#demo-video" title="Permanent link">&para;</a></h3>
+<!-- blank line -->
+<figure class="video_container">
+  <video width="817" height="460" controls="true" allowfullscreen="true" poster="/assets/vPerms-poster.png">
+    <source src="/assets/vPerms-demo.mp4" type="video/mp4">
+  </video>
+</figure>
+<!-- blank line -->
+
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Install and configure <a href="https://github.com/VikingTheDev/vDiscord"><code>vDiscord</code></a>, if you run into problems check out the <a href="docs.vikingthe.dev/fivem-docs/latest/projects/Discord/vDiscord/">docs</a>.</p>
+</li>
+<li>
+<p>Download or clone the resource from this <a href="https://github.com/VikingTheDev/vPerms">repository</a>. </p>
+</li>
+<li>
+<p>Move <code>vPerms</code> into your resource folder and add <code>ensure vPerms</code> to your server.cfg.</p>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You have to configure the script before running it.</p>
+</div>
 <h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Navigate to src/config.perms.json and open it.</p>
+</li>
+<li>
+<p>Change the categories/subcategories/roles to suit your needs. There's no limits to how many you can add. Watch the video below for a breakdown of how the permissions should be set up.</p>
+</li>
+</ul>
+<h3 id="config-breakdown">Config breakdown:<a class="headerlink" href="#config-breakdown" title="Permanent link">&para;</a></h3>
+<!-- blank line -->
+<figure class="video_container">
+  <video width="817" height="460" controls="true" allowfullscreen="true" poster="/assets/perms-breakdown-poster.png">
+    <source src="/assets/perms-breakdown.mp4" type="video/mp4">
+  </video>
+</figure>
+<!-- blank line -->
+
 <h2 id="exports">Exports<a class="headerlink" href="#exports" title="Permanent link">&para;</a></h2>
+<h3 id="getplayerperms">getPlayerPerms<a class="headerlink" href="#getplayerperms" title="Permanent link">&para;</a></h3>
+<p>Allows you to get the perms of a player (Server side).</p>
+<h4>Function</h4>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">perms</span> <span class="o">=</span> <span class="nx">getPlayerPerms</span><span class="p">(</span><span class="nx">source</span><span class="p">);</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>source</code></td>
+<td align="center">Player source</td>
+<td align="center">Source of the player you want to get perms for.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<h4>Example Code</h4>
+<p>Config file used for the example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;permSetup&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;staff&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;adminstration&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;ID goes here&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;admin&quot;</span><span class="p">:</span> <span class="s2">&quot;ID goes here&quot;</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;moderation&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;mod&quot;</span><span class="p">:</span> <span class="s2">&quot;ID goes here&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;trial_mod&quot;</span><span class="p">:</span> <span class="s2">&quot;ID goes here&quot;</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;developer&quot;</span><span class="p">:</span> <span class="s2">&quot;ID goes here&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">JS</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">perms</span> <span class="o">=</span> <span class="nx">getPlayerPerms</span><span class="p">(</span><span class="nx">source</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">perms</span><span class="p">)</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nx">category</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">staff</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+  <span class="p">},</span>
+  <span class="nx">subcategory</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">adminstration</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nx">moderation</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+  <span class="p">},</span>
+  <span class="nx">staff</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">adminstration</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">owner</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="nx">admin</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="nx">moderation</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">mod</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="nx">trial_mod</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="nx">developer</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">LUA</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="o">#</span><span class="n">To</span><span class="o">-</span><span class="n">come</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="n">category</span><span class="p">:</span> <span class="p">{</span>
+    <span class="n">staff</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+  <span class="p">},</span>
+  <span class="n">subcategory</span><span class="p">:</span> <span class="p">{</span>
+    <span class="n">adminstration</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="n">moderation</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+  <span class="p">},</span>
+  <span class="n">staff</span><span class="p">:</span> <span class="p">{</span>
+    <span class="n">adminstration</span><span class="p">:</span> <span class="p">{</span>
+      <span class="n">owner</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="n">admin</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="n">moderation</span><span class="p">:</span> <span class="p">{</span>
+      <span class="n">mod</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="n">trial_mod</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="n">developer</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">C#</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>#To-come
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code>{
+  category: {
+    staff: true / false
+  },
+  subcategory: {
+    adminstration: true / false,
+    moderation: true / false
+  },
+  staff: {
+    adminstration: {
+      owner: true / false,
+      admin: true / false
+    },
+    moderation: {
+      mod: true / false,
+      trial_mod: true / false
+    },
+    developer: true / false
+  }
+}
+</code></pre></div>
+</div>
+</div>
+</div>
 <h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
+<h3 id="setperms">setPerms<a class="headerlink" href="#setperms" title="Permanent link">&para;</a></h3>
+<p>Event triggered when perms are set for a user (Client side).</p>
+<h4>Function</h4>
+<div class="highlight"><pre><span></span><code><span class="nx">onNet</span><span class="p">(</span><span class="s1">&#39;vPerms:setPerms&#39;</span><span class="p">,</span> <span class="p">(</span> <span class="nx">perms</span> <span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="p">}</span> <span class="p">);</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>perms</code></td>
+<td align="center">Object</td>
+<td align="center">Object containing all permissisons for the user</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<h4>Example Code</h4>
+<p>Config file used for the example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;permSetup&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;staff&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;adminstration&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;ID goes here&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;admin&quot;</span><span class="p">:</span> <span class="s2">&quot;ID goes here&quot;</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;moderation&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;mod&quot;</span><span class="p">:</span> <span class="s2">&quot;ID goes here&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;trial_mod&quot;</span><span class="p">:</span> <span class="s2">&quot;ID goes here&quot;</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;developer&quot;</span><span class="p">:</span> <span class="s2">&quot;ID goes here&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">JS</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nx">onNet</span><span class="p">(</span><span class="s1">&#39;vPerms:setPerms&#39;</span><span class="p">,</span> <span class="p">(</span> <span class="nx">perms</span> <span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">perms</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nx">category</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">staff</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+  <span class="p">},</span>
+  <span class="nx">subcategory</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">adminstration</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nx">moderation</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+  <span class="p">},</span>
+  <span class="nx">staff</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">adminstration</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">owner</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="nx">admin</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="nx">moderation</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">mod</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="nx">trial_mod</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="nx">developer</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">LUA</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="o">#</span><span class="n">To</span><span class="o">-</span><span class="n">come</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="n">category</span><span class="p">:</span> <span class="p">{</span>
+    <span class="n">staff</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+  <span class="p">},</span>
+  <span class="n">subcategory</span><span class="p">:</span> <span class="p">{</span>
+    <span class="n">adminstration</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="n">moderation</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+  <span class="p">},</span>
+  <span class="n">staff</span><span class="p">:</span> <span class="p">{</span>
+    <span class="n">adminstration</span><span class="p">:</span> <span class="p">{</span>
+      <span class="n">owner</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="n">admin</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="n">moderation</span><span class="p">:</span> <span class="p">{</span>
+      <span class="n">mod</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="n">trial_mod</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="n">developer</span><span class="p">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">C#</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>#To-come
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code>{
+  category: {
+    staff: true / false
+  },
+  subcategory: {
+    adminstration: true / false,
+    moderation: true / false
+  },
+  staff: {
+    adminstration: {
+      owner: true / false,
+      admin: true / false
+    },
+    moderation: {
+      mod: true / false,
+      trial_mod: true / false
+    },
+    developer: true / false
+  }
+}
+</code></pre></div>
+</div>
+</div>
+</div>
                 
               
               
