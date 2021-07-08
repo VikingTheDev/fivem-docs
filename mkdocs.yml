@@ -1,0 +1,60 @@
+site_name: VikingTheDev Docs
+
+theme: 
+  name: material
+  palette:
+    scheme: slate
+    primary: cyan
+    accent: indigo
+  font:
+    text: Roboto
+  logo: assets/white-500.png
+  favicon: assets/black.png
+  features:
+    - navigation.top
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+
+  icon:
+    repo: fontawesome/brands/github
+    
+plugins:
+  - search
+
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/VikingTheDev
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/users/230347924951793664
+
+markdown_extensions:
+  - attr_list
+  - abbr
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - def_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+
+nav:
+  - Home: 'index.md'
+  - Projects:
+    - Information: 'projects/index.md'
+    - Discord:
+      - vDiscord: 'projects/Discord/vDiscord.md'
+      - vPerms: 'projects/Discord/vPerms.md'
+
+copyright: Copyright &copy; 2020 - 2021 VikingTheDev
+repo_url: https://github.com/VikingTheDev/fivem-docs
+repo_name: VikingTheDev/fivem-docs

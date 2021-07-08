@@ -1,0 +1,1843 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../../assets/black.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+    
+    
+      
+        <title>vDiscord - VikingTheDev Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#00bdd6">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7C&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="cyan" data-md-color-accent="indigo">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#general" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="VikingTheDev Docs" class="md-header-nav__button md-logo" aria-label="VikingTheDev Docs">
+      
+  <img src="../../../assets/white-500.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            VikingTheDev Docs
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              vDiscord
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/VikingTheDev/fivem-docs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    VikingTheDev/fivem-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
+        Projects
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="VikingTheDev Docs" class="md-nav__button md-logo" aria-label="VikingTheDev Docs">
+      
+  <img src="../../../assets/white-500.png" alt="logo">
+
+    </a>
+    VikingTheDev Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/VikingTheDev/fivem-docs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    VikingTheDev/fivem-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      
+      <label class="md-nav__link" for="nav-2">
+        Projects
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Projects" data-md-level="1">
+        <label class="md-nav__title" for="nav-2">
+          <span class="md-nav__icon md-icon"></span>
+          Projects
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        Information
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
+      
+      <label class="md-nav__link" for="nav-2-2">
+        Discord
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Discord" data-md-level="2">
+        <label class="md-nav__title" for="nav-2-2">
+          <span class="md-nav__icon md-icon"></span>
+          Discord
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          vDiscord
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        vDiscord
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    General
+  </a>
+  
+    <nav class="md-nav" aria-label="General">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-the-websocket" class="md-nav__link">
+    Why the websocket?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    Steps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vapi" class="md-nav__link">
+    vAPI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vconnect" class="md-nav__link">
+    vConnect
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exports" class="md-nav__link">
+    Exports
+  </a>
+  
+    <nav class="md-nav" aria-label="Exports">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user" class="md-nav__link">
+    user
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendlogmsg" class="md-nav__link">
+    sendLogMsg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getuserdata" class="md-nav__link">
+    getUserData
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkdiscordban" class="md-nav__link">
+    checkDiscordBan
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+    <nav class="md-nav" aria-label="Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guildmemberupdate" class="md-nav__link">
+    guildMemberUpdate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guildbanadd" class="md-nav__link">
+    guildBanAdd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guildbanremove" class="md-nav__link">
+    guildBanRemove
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vPerms/" class="md-nav__link">
+        vPerms
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    General
+  </a>
+  
+    <nav class="md-nav" aria-label="General">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-the-websocket" class="md-nav__link">
+    Why the websocket?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    Steps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vapi" class="md-nav__link">
+    vAPI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vconnect" class="md-nav__link">
+    vConnect
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exports" class="md-nav__link">
+    Exports
+  </a>
+  
+    <nav class="md-nav" aria-label="Exports">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user" class="md-nav__link">
+    user
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendlogmsg" class="md-nav__link">
+    sendLogMsg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getuserdata" class="md-nav__link">
+    getUserData
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkdiscordban" class="md-nav__link">
+    checkDiscordBan
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+    <nav class="md-nav" aria-label="Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guildmemberupdate" class="md-nav__link">
+    guildMemberUpdate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guildbanadd" class="md-nav__link">
+    guildBanAdd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guildbanremove" class="md-nav__link">
+    guildBanRemove
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/VikingTheDev/fivem-docs/edit/master/docs/projects/Discord/vDiscord.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>vDiscord</h1>
+                
+                <h2 id="general">General<a class="headerlink" href="#general" title="Permanent link">&para;</a></h2>
+<p>vDiscord is an API that allows you to interact with a <a href="https://discord.com/developers/docs/intro#bots-and-apps">Discord Bot</a>. The resource comes in two "pieces", the API itself that runs outside of the server, and vConnect. The API and vConnect uses a websocket to communicate, meaning all interactions are instantaneous.</p>
+<h3 id="why-the-websocket">Why the websocket?<a class="headerlink" href="#why-the-websocket" title="Permanent link">&para;</a></h3>
+<p>Discord.js won't run on server due some compatability issues. There used to be a forked version of discord.js that ran on server, but it stopped working for me, so I had to write an API instead. Although it's annoying having to run it outside the server, it brings the benefit of being able to run the latest version of discord.js.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
+<p>Node.js (download <a href="https://nodejs.org/en/">here</a>) and a discord bot in your community's discord server (You can create a bot <a href="https://discord.com/developers/applications">here</a>).</p>
+<h3 id="steps">Steps<a class="headerlink" href="#steps" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Download or clone the resource from this <a href="https://github.com/vDiscord">repository</a>. When you open the downloaded folder you will find two folders; <code>vConnect</code> and <code>vAPI</code>. </p>
+</li>
+<li>
+<p>Move <code>vConnect</code> into your resource folder and add <code>ensure vConnect</code> to your server.cfg. Open a command-line interface (CMD, Bash, Powershell etc.), and navigate to the <code>vConnect</code> folder. Type <code>npm install</code>, and wait for <abbr title="Node Package Manager">npm</abbr> to install all dependencies.</p>
+</li>
+<li>
+<p>Move <code>vAPI</code> to a location of your choice <em>outside</em> of the server files i.e. the desktop. Open your <abbr title="Command-line Interface">CLI</abbr> and navigate to the <code>vAPI</code> folder. Type the following <code>npm install</code> and wait for <abbr title="Node Package Manager">npm</abbr> to install all dependencies. To start the API, navigate to the folder in your <abbr title="Command-line Interface">CLI</abbr> and type <code>node src/index.js</code>. I'd recommend setting up a .bat file for this so that you don't have to check the docs everytime you want to start the API. </p>
+</li>
+</ol>
+<p>It does not matter if you start the API before or after the server, or if you close and reopen it while the server is running. When <code>vConnect</code> connects to <code>vAPI</code> a message will be logged in both consoles.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You have to configure both scripts before running them.</p>
+</div>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<h3 id="vapi">vAPI<a class="headerlink" href="#vapi" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Open <code>config.api.json</code>.</li>
+<li>Change <code>botToken</code> to the token of the discord bot you're using (https://discord.com/developers/applications).</li>
+<li>Change <code>guildId</code> to the ID of you community's discord server (Enable developer mode on discord, right click your server and press "Copy ID").</li>
+<li>Change <code>websocketToken</code> to a token of your choice, this is to ensure no unauthorized connections take place so it should preferably be something hard to guess.</li>
+</ul>
+<h3 id="vconnect">vConnect<a class="headerlink" href="#vconnect" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Open <code>config.json</code>.</li>
+<li>Change <code>queryToken</code> to the same token as <code>websocketToken</code>. Again, make it secure as this is to prevent unauthorized connections.</li>
+</ul>
+<h2 id="exports">Exports<a class="headerlink" href="#exports" title="Permanent link">&para;</a></h2>
+<h3 id="user">user<a class="headerlink" href="#user" title="Permanent link">&para;</a></h3>
+<p>Methods for interacting with a user, currently used for adding/removing roles, sending DMs and moving a user to a VC.</p>
+<h4>Function</h4>
+<div class="highlight"><pre><span></span><code><span class="nx">user</span><span class="p">(</span><span class="nx">type</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">cb</span> <span class="p">=&gt;</span> <span class="p">{});</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>type</code></td>
+<td align="center">String</td>
+<td align="center">Used to define which type of interaction you want to use</td>
+</tr>
+<tr>
+<td align="center"><code>data</code></td>
+<td align="center">Object <em>or</em> String</td>
+<td align="center">Object containing data neccessary for the function, see below for more info</td>
+</tr>
+<tr>
+<td align="center"><code>cb</code></td>
+<td align="center">Callback</td>
+<td align="center">Callback returning an object with a status message (success or error)</td>
+</tr>
+</tbody>
+</table>
+<h4>Types</h4>
+<h5>roleAdd</h5>
+<p>Used for adding a role to a user.</p>
+<p><code>data</code> object structure:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>user</code></td>
+<td align="center">String</td>
+<td align="center">ID of the user you're adding the role to</td>
+</tr>
+<tr>
+<td align="center"><code>role</code></td>
+<td align="center">String</td>
+<td align="center">ID of the role you wish to add</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<h4>Example Code</h4>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">JS</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nx">exports</span><span class="p">.</span><span class="nx">discord</span><span class="p">.</span><span class="nx">user</span><span class="p">(</span><span class="s2">&quot;roleAdd&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">user</span><span class="o">:</span> <span class="s2">&quot;230347924951793664&quot;</span><span class="p">,</span>
+    <span class="nx">role</span><span class="o">:</span> <span class="s2">&quot;774617965337247765&quot;</span>
+<span class="p">},</span> <span class="nx">cb</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cb</span><span class="p">)</span>
+<span class="p">});</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;err&quot;</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="nx">status_message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">LUA</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="o">#</span><span class="n">To</span><span class="o">-</span><span class="n">come</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;err&quot;</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="nx">status_message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">C#</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>#To-come
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;err&quot;</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="nx">status_message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h5>roleRemove</h5>
+<p>Used for removing a role to from user.</p>
+<p><code>data</code> object structure:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>user</code></td>
+<td align="center">String</td>
+<td align="center">ID of the user you're removing the role from</td>
+</tr>
+<tr>
+<td align="center"><code>role</code></td>
+<td align="center">String</td>
+<td align="center">ID of the role you wish to remove</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<h4>Example Code</h4>
+<div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">JS</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nx">exports</span><span class="p">.</span><span class="nx">discord</span><span class="p">.</span><span class="nx">user</span><span class="p">(</span><span class="s2">&quot;roleRemove&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">user</span><span class="o">:</span> <span class="s2">&quot;230347924951793664&quot;</span><span class="p">,</span>
+    <span class="nx">role</span><span class="o">:</span> <span class="s2">&quot;774617965337247765&quot;</span>
+<span class="p">},</span> <span class="nx">cb</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cb</span><span class="p">)</span>
+<span class="p">});</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;err&quot;</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="nx">status_message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">LUA</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="o">#</span><span class="n">To</span><span class="o">-</span><span class="n">come</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;err&quot;</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="nx">status_message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">C#</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>#To-come
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;err&quot;</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="nx">status_message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h5>moveVC</h5>
+<p>Used for moving a user to a different VC.</p>
+<p><code>data</code> object structure:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>user</code></td>
+<td align="center">String</td>
+<td align="center">ID of the user you're moving</td>
+</tr>
+<tr>
+<td align="center"><code>channel</code></td>
+<td align="center">String</td>
+<td align="center">ID of the channel you're moving the user to</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<h4>Example Code</h4>
+<div class="tabbed-set" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">JS</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nx">exports</span><span class="p">.</span><span class="nx">discord</span><span class="p">.</span><span class="nx">user</span><span class="p">(</span><span class="s2">&quot;moveVC&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">user</span><span class="o">:</span> <span class="s2">&quot;230347924951793664&quot;</span><span class="p">,</span>
+    <span class="nx">channel</span><span class="o">:</span> <span class="s2">&quot;811258115537371186&quot;</span>
+<span class="p">},</span> <span class="nx">cb</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cb</span><span class="p">)</span>
+<span class="p">});</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;err&quot;</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="nx">status_message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">LUA</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="o">#</span><span class="n">To</span><span class="o">-</span><span class="n">come</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;err&quot;</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="nx">status_message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><label for="__tabbed_3_3">C#</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>#To-come
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;err&quot;</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="nx">status_message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h5>sendDM</h5>
+<p>Used for sending a DM to a user.</p>
+<p><code>data</code> object structure:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>user</code></td>
+<td align="center">String</td>
+<td align="center">ID of the user you're messaging</td>
+</tr>
+<tr>
+<td align="center"><code>message</code></td>
+<td align="center">String <em>or</em> Object</td>
+<td align="center">Message content either as string or an embed object</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<h4>Example Code</h4>
+<div class="tabbed-set" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">JS</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nx">exports</span><span class="p">.</span><span class="nx">discord</span><span class="p">.</span><span class="nx">user</span><span class="p">(</span><span class="s2">&quot;semdDM&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">user</span><span class="o">:</span> <span class="s2">&quot;230347924951793664&quot;</span><span class="p">,</span>
+    <span class="nx">message</span><span class="o">:</span> <span class="s2">&quot;Hi :)&quot;</span>
+<span class="p">},</span> <span class="nx">cb</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cb</span><span class="p">)</span>
+<span class="p">});</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;err&quot;</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="nx">status_message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">LUA</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="o">#</span><span class="n">To</span><span class="o">-</span><span class="n">come</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;err&quot;</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="nx">status_message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><label for="__tabbed_4_3">C#</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>#To-come
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;err&quot;</span><span class="o">:</span> <span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="nx">status_message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="sendlogmsg">sendLogMsg<a class="headerlink" href="#sendlogmsg" title="Permanent link">&para;</a></h3>
+<p>Export used to send regualar and embed messages to a channel, intended to be used for logging.</p>
+<h4>Function</h4>
+<div class="highlight"><pre><span></span><code>    <span class="nx">sendLogMsg</span><span class="p">(</span><span class="nx">type</span><span class="p">,</span> <span class="nx">channel</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">cb</span> <span class="p">=&gt;</span> <span class="p">{});</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>type</code></td>
+<td align="center">String</td>
+<td align="center">Used to define which type of message you want to send</td>
+</tr>
+<tr>
+<td align="center"><code>channel</code></td>
+<td align="center">String</td>
+<td align="center">Used to define which channel the message should be sent to</td>
+</tr>
+<tr>
+<td align="center"><code>data</code></td>
+<td align="center">Object <em>or</em> String</td>
+<td align="center">Object or string containing message data, content depends on type, see below for more info on this</td>
+</tr>
+<tr>
+<td align="center"><code>cb</code></td>
+<td align="center">Callback</td>
+<td align="center">Callback returning a bool and an object containing message info/any error messages</td>
+</tr>
+</tbody>
+</table>
+<h4>Types</h4>
+<h5>regular</h5>
+<p>Used for sending a regular message to a channel, takes a string as <code>data</code>.</p>
+<div class="admonition info">
+<h4>Example Code</h4>
+<div class="tabbed-set" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">JS</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">channel</span> <span class="o">=</span> <span class="s2">&quot;*textchannel id*&quot;</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World!&quot;</span><span class="p">;</span>
+<span class="nx">exports</span><span class="p">.</span><span class="nx">discord</span><span class="p">.</span><span class="nx">sendLogMsg</span><span class="p">(</span><span class="s2">&quot;regular&quot;</span><span class="p">,</span> <span class="nx">channel</span><span class="p">,</span> <span class="nx">message</span><span class="p">,</span> <span class="nx">cb</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cb</span><span class="p">)</span>
+<span class="p">});</span>
+</code></pre></div>
+<h4>Output</h4>
+<p>If the channel is valid and the message is successfully delivered:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;sent&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;*message id*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;channelId&quot;</span><span class="o">:</span> <span class="s2">&quot;*id of textchannel*&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>If the channel is invalid or some other error occurs:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;sent&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;error&quot;</span><span class="o">:</span> <span class="nx">err</span><span class="p">.</span><span class="nx">message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">LUA</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="o">#</span><span class="n">To</span><span class="o">-</span><span class="n">come</span>
+</code></pre></div>
+<h4>Output</h4>
+<p>If the channel is valid and the message is successfully delivered:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;sent&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;*message id*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;channelId&quot;</span><span class="p">:</span> <span class="s2">&quot;*id of textchannel*&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>If the channel is invalid or some other error occurs:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;sent&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="n">err</span><span class="p">.</span><span class="n">message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><label for="__tabbed_5_3">C#</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>#To-come
+</code></pre></div>
+<h4>Output</h4>
+<p>If the channel is valid and the message is successfully delivered:</p>
+<div class="highlight"><pre><span></span><code>{
+    &quot;sent&quot;: true,
+    &quot;id&quot;: &quot;*message id*&quot;,
+    &quot;channelId&quot;: &quot;*id of textchannel*&quot;
+}
+</code></pre></div>
+<p>If the channel is invalid or some other error occurs:</p>
+<div class="highlight"><pre><span></span><code>{
+    &quot;sent&quot;: false,
+    &quot;error&quot;: err.message
+}
+</code></pre></div>
+</div>
+</div>
+</div>
+<h5>embed</h5>
+<p>Used for sending a embed message to a channel, takes an object as <code>data</code>.</p>
+<div class="admonition info">
+<h4>Example Code</h4>
+<div class="tabbed-set" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">JS</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">channel</span> <span class="o">=</span> <span class="s2">&quot;*textchannel id*&quot;</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">embedobj</span> <span class="o">=</span> <span class="p">{</span> 
+    <span class="s2">&quot;content&quot;</span><span class="o">:</span> <span class="s2">&quot;&lt;@&amp;767803636926906419&gt;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;embed&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">author</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Name of author&quot;</span><span class="p">,</span>
+        <span class="nx">iconURL</span><span class="o">:</span> <span class="s2">&quot;https://cdn.discordapp.com/attachments/562656258415525898/571040114277613598/officialssrplogo.png&quot;</span>
+        <span class="p">},</span>
+        <span class="nx">color</span><span class="o">:</span> <span class="s2">&quot;12745742&quot;</span><span class="p">,</span>
+        <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;This is a title&quot;</span><span class="p">,</span>
+        <span class="nx">description</span><span class="o">:</span> <span class="s2">&quot;This is a description&quot;</span><span class="p">,</span>
+        <span class="nx">fields</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;field1&quot;</span><span class="p">,</span>
+            <span class="nx">value</span><span class="o">:</span> <span class="s2">&quot;field 1 text&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;field2&quot;</span><span class="p">,</span>
+            <span class="nx">value</span><span class="o">:</span> <span class="s2">&quot;field 2 text&quot;</span>
+        <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nx">footer</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;Test © Petrikov&quot;</span><span class="p">,</span>
+            <span class="nx">iconURL</span><span class="o">:</span> <span class="s2">&quot;https://cdn.discordapp.com/attachments/562656258415525898/571040114277613598/officialssrplogo.png&quot;</span>
+        <span class="p">},</span>
+        <span class="nx">timestamp</span><span class="o">:</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">exports</span><span class="p">.</span><span class="nx">discord</span><span class="p">.</span><span class="nx">sendLogMsg</span><span class="p">(</span><span class="s2">&quot;embed&quot;</span><span class="p">,</span> <span class="nx">channel</span><span class="p">,</span> <span class="nx">embedobj</span><span class="p">,</span> <span class="nx">cb</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cb</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre></div>
+<h4>Output</h4>
+<p>If the channel is valid and the message is successfully delivered:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;sent&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;*message id*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;channelId&quot;</span><span class="o">:</span> <span class="s2">&quot;*id of textchannel*&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>If the channel is invalid or some other error occurs:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;sent&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;error&quot;</span><span class="o">:</span> <span class="nx">err</span><span class="p">.</span><span class="nx">message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">LUA</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="o">#</span><span class="n">To</span><span class="o">-</span><span class="n">come</span>
+</code></pre></div>
+<h4>Output</h4>
+<p>If the channel is valid and the message is successfully delivered:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;sent&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;*message id*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;channelId&quot;</span><span class="p">:</span> <span class="s2">&quot;*id of textchannel*&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>If the channel is invalid or some other error occurs:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;sent&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="n">err</span><span class="p">.</span><span class="n">message</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><label for="__tabbed_6_3">C#</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>#To-come
+</code></pre></div>
+<h4>Output</h4>
+<p>If the channel is valid and the message is successfully delivered:</p>
+<div class="highlight"><pre><span></span><code>{
+    &quot;sent&quot;: true,
+    &quot;id&quot;: &quot;*message id*&quot;,
+    &quot;channelId&quot;: &quot;*id of textchannel*&quot;
+}
+</code></pre></div>
+<p>If the channel is invalid or some other error occurs:</p>
+<div class="highlight"><pre><span></span><code>{
+    &quot;sent&quot;: false,
+    &quot;error&quot;: err.message
+}
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="getuserdata">getUserData<a class="headerlink" href="#getuserdata" title="Permanent link">&para;</a></h3>
+<p>Returns an object containing user data.</p>
+<h4>Function</h4>
+<div class="highlight"><pre><span></span><code><span class="nx">getUserData</span><span class="p">(</span><span class="nx">user</span><span class="p">,</span> <span class="nx">cb</span> <span class="p">=&gt;</span> <span class="p">{});</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>user</code></td>
+<td align="center">String</td>
+<td align="center">The ID of the user you're fetching data for.</td>
+</tr>
+<tr>
+<td align="center"><code>cb</code></td>
+<td align="center">Callback</td>
+<td align="center">Callback returning the data object <em>or</em> undefined</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<h4>Example Code</h4>
+<div class="tabbed-set" data-tabs="7:3"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">JS</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">userId</span> <span class="o">=</span> <span class="s2">&quot;*userID*&quot;</span><span class="p">;</span>
+<span class="nx">exports</span><span class="p">.</span><span class="nx">discord</span><span class="p">.</span><span class="nx">getUserData</span><span class="p">(</span><span class="nx">user</span><span class="p">,</span> <span class="p">(</span><span class="nx">completed</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">completed</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre></div>
+<h4>Output</h4>
+<p>If the user id is valid and the bot can successfully gather the data:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;*users ID*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;guildId&quot;</span><span class="o">:</span> <span class="s2">&quot;*guild ID*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tag&quot;</span><span class="o">:</span> <span class="s2">&quot;username#0000&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;displayName&quot;</span><span class="o">:</span> <span class="s2">&quot;*users displayname in guild*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;roles&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="s2">&quot;role 1 id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;role 2 id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;role 3 id&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>If the user id is invalid or some other error occurs: (Error info will be logged in console)</p>
+<div class="highlight"><pre><span></span><code><span class="kc">undefined</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><label for="__tabbed_7_2">LUA</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="o">#</span><span class="n">To</span><span class="o">-</span><span class="n">come</span>
+</code></pre></div>
+<h4>Output</h4>
+<p>If the user id is valid and the bot can successfully gather the data:</p>
+<div class="highlight"><pre><span></span><code><span class="kc">true</span> <span class="p">{</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;*users ID*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;guildId&quot;</span><span class="p">:</span> <span class="s2">&quot;*guild ID*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tag&quot;</span><span class="p">:</span> <span class="s2">&quot;username#0000&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;displayName&quot;</span><span class="p">:</span> <span class="s2">&quot;*users displayname in guild*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;roles&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;role 1 id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;role 2 id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;role 3 id&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>If the user id is invalid or some other error occurs:</p>
+<div class="highlight"><pre><span></span><code><span class="kc">false</span> <span class="o">*</span><span class="nb">error</span> <span class="n">message</span> <span class="n">ex</span><span class="p">.</span> <span class="s2">&quot;Cannot read property &#39;user&#39; of undefined&quot;</span><span class="o">*</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_7_3" name="__tabbed_7" type="radio" /><label for="__tabbed_7_3">C#</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>#To-come
+</code></pre></div>
+<h4>Output</h4>
+<p>If the user id is valid and the bot can successfully gather the data:</p>
+<div class="highlight"><pre><span></span><code>true {
+    &quot;id&quot;: &quot;*users ID*&quot;,
+    &quot;guildId&quot;: &quot;*guild ID*&quot;,
+    &quot;tag&quot;: &quot;username#0000&quot;,
+    &quot;displayName&quot;: &quot;*users displayname in guild*&quot;,
+    &quot;roles&quot;: [
+        &quot;role 1 id&quot;,
+        &quot;role 2 id&quot;,
+        &quot;role 3 id&quot;
+    ]
+}
+</code></pre></div>
+<p>If the user id is invalid or some other error occurs:</p>
+<div class="highlight"><pre><span></span><code>false *error message ex. &quot;Cannot read property &#39;user&#39; of undefined&quot;*
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="checkdiscordban">checkDiscordBan<a class="headerlink" href="#checkdiscordban" title="Permanent link">&para;</a></h3>
+<p>Checks if a user is banned in the guild specified in the config.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">checkDiscordBan</span><span class="p">(</span><span class="nx">user</span><span class="p">,</span> <span class="nx">cb</span> <span class="p">=&gt;</span> <span class="p">{});</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>user</code></td>
+<td align="center">String</td>
+<td align="center">The ID of the user you're checking.</td>
+</tr>
+<tr>
+<td align="center"><code>cb</code></td>
+<td align="center">Callback</td>
+<td align="center">Callback returning a bool and the reason for the ban <em>or</em> an error message</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<h4>Example Code</h4>
+<div class="tabbed-set" data-tabs="8:3"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><label for="__tabbed_8_1">JS</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">user</span> <span class="o">=</span> <span class="s2">&quot;*userID*&quot;</span>
+<span class="nx">exports</span><span class="p">.</span><span class="nx">jsbase</span><span class="p">.</span><span class="nx">checkDiscordBan</span><span class="p">(</span><span class="nx">user</span><span class="p">,</span> <span class="p">(</span><span class="nx">bool</span><span class="p">,</span> <span class="nx">reason</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">bool</span><span class="p">,</span> <span class="nx">reason</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<h4>Output</h4>
+<p>If the user is banned:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span> 
+    <span class="nx">state</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nx">reason</span><span class="o">:</span> <span class="s2">&quot;*Reason for ban*&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>If the user is not banned:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span> 
+    <span class="nx">state</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nx">reason</span><span class="o">:</span> <span class="kc">undefined</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>If an error occured:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span> 
+    <span class="nx">state</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nx">reason</span><span class="o">:</span> <span class="s2">&quot;*error message*&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><label for="__tabbed_8_2">LUA</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="o">#</span><span class="n">To</span><span class="o">-</span><span class="n">come</span>
+</code></pre></div>
+<h4>Output</h4>
+<p>If the user is banned:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span> 
+    <span class="n">state</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="n">reason</span><span class="p">:</span> <span class="s2">&quot;*Reason for ban*&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>If the user is not banned:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span> 
+    <span class="n">state</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="n">reason</span><span class="p">:</span> <span class="n">undefined</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>If an error occured:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span> 
+    <span class="n">state</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="n">reason</span><span class="p">:</span> <span class="s2">&quot;*error message*&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_8_3" name="__tabbed_8" type="radio" /><label for="__tabbed_8_3">C#</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>#To-come
+</code></pre></div>
+<h4>Output</h4>
+<p>If the user is banned:</p>
+<div class="highlight"><pre><span></span><code>{ 
+    state: true,
+    reason: &quot;*Reason for ban*&quot;
+}
+</code></pre></div>
+<p>If the user is not banned:</p>
+<div class="highlight"><pre><span></span><code>{ 
+    state: false,
+    reason: undefined
+}
+</code></pre></div>
+<p>If an error occured:</p>
+<div class="highlight"><pre><span></span><code>{ 
+    state: false,
+    reason: &quot;*error message*&quot;
+}
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
+<h3 id="guildmemberupdate">guildMemberUpdate<a class="headerlink" href="#guildmemberupdate" title="Permanent link">&para;</a></h3>
+<p>Is triggered when a user is updated in the guild, i.e. name, roles etc.</p>
+<h4>Server side event</h4>
+<div class="highlight"><pre><span></span><code><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;vConnect:guildMemberUpdate&#39;</span><span class="p">,</span> <span class="p">(</span> <span class="nx">m</span> <span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{}</span> <span class="p">);</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>m</code></td>
+<td align="center">Callback</td>
+<td align="center">Callback returning an object with info on updated the guild member</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<h4>Example Code</h4>
+<div class="tabbed-set" data-tabs="9:3"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">JS</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;vConnect:guildMemberUpdate&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">m</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">m</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;*users ID*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;guildId&quot;</span><span class="o">:</span> <span class="s2">&quot;*guild ID*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tag&quot;</span><span class="o">:</span> <span class="s2">&quot;username#0000&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;displayName&quot;</span><span class="o">:</span> <span class="s2">&quot;*users displayname in guild*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;roles&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="s2">&quot;role 1 id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;role 2 id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;role 3 id&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><label for="__tabbed_9_2">LUA</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="o">#</span><span class="n">To</span><span class="o">-</span><span class="n">come</span>
+</code></pre></div>
+<h4>Output</h4>
+<p>If the user id is valid and the bot can successfully gather the data:</p>
+<div class="highlight"><pre><span></span><code><span class="kc">true</span> <span class="p">{</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;*users ID*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;guildId&quot;</span><span class="p">:</span> <span class="s2">&quot;*guild ID*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tag&quot;</span><span class="p">:</span> <span class="s2">&quot;username#0000&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;displayName&quot;</span><span class="p">:</span> <span class="s2">&quot;*users displayname in guild*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;roles&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;role 1 id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;role 2 id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;role 3 id&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_9_3" name="__tabbed_9" type="radio" /><label for="__tabbed_9_3">C#</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>#To-come
+</code></pre></div>
+<h4>Output</h4>
+<p>If the user id is valid and the bot can successfully gather the data:</p>
+<div class="highlight"><pre><span></span><code>true {
+    &quot;id&quot;: &quot;*users ID*&quot;,
+    &quot;guildId&quot;: &quot;*guild ID*&quot;,
+    &quot;tag&quot;: &quot;username#0000&quot;,
+    &quot;displayName&quot;: &quot;*users displayname in guild*&quot;,
+    &quot;roles&quot;: [
+        &quot;role 1 id&quot;,
+        &quot;role 2 id&quot;,
+        &quot;role 3 id&quot;
+    ]
+}
+</code></pre></div>
+</div>
+</div>
+</div>
+<h4>Client side event</h4>
+<p>Functions exactly same way as the server side event, but will be triggered in client scripts (Currently triggers on ALL clients, which might not be optimal. Expect possible change here).</p>
+<div class="highlight"><pre><span></span><code><span class="nx">onNet</span><span class="p">(</span><span class="s1">&#39;vConnect:guildMemberUpdate&#39;</span><span class="p">,</span> <span class="p">(</span> <span class="nx">m</span> <span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{}</span> <span class="p">);</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>m</code></td>
+<td align="center">Object</td>
+<td align="center">Callback returning an object with info on updated the guild member</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<h4>Example Code</h4>
+<div class="tabbed-set" data-tabs="10:3"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><label for="__tabbed_10_1">JS</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nx">onNet</span><span class="p">(</span><span class="s1">&#39;vConnect:guildMemberUpdate&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">m</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">m</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;*users ID*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;guildId&quot;</span><span class="o">:</span> <span class="s2">&quot;*guild ID*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tag&quot;</span><span class="o">:</span> <span class="s2">&quot;username#0000&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;displayName&quot;</span><span class="o">:</span> <span class="s2">&quot;*users displayname in guild*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;roles&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="s2">&quot;role 1 id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;role 2 id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;role 3 id&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><label for="__tabbed_10_2">LUA</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="o">#</span><span class="n">To</span><span class="o">-</span><span class="n">come</span>
+</code></pre></div>
+<h4>Output</h4>
+<p>If the user id is valid and the bot can successfully gather the data:</p>
+<div class="highlight"><pre><span></span><code><span class="kc">true</span> <span class="p">{</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;*users ID*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;guildId&quot;</span><span class="p">:</span> <span class="s2">&quot;*guild ID*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tag&quot;</span><span class="p">:</span> <span class="s2">&quot;username#0000&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;displayName&quot;</span><span class="p">:</span> <span class="s2">&quot;*users displayname in guild*&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;roles&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;role 1 id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;role 2 id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;role 3 id&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_10_3" name="__tabbed_10" type="radio" /><label for="__tabbed_10_3">C#</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>#To-come
+</code></pre></div>
+<h4>Output</h4>
+<p>If the user id is valid and the bot can successfully gather the data:</p>
+<div class="highlight"><pre><span></span><code>true {
+    &quot;id&quot;: &quot;*users ID*&quot;,
+    &quot;guildId&quot;: &quot;*guild ID*&quot;,
+    &quot;tag&quot;: &quot;username#0000&quot;,
+    &quot;displayName&quot;: &quot;*users displayname in guild*&quot;,
+    &quot;roles&quot;: [
+        &quot;role 1 id&quot;,
+        &quot;role 2 id&quot;,
+        &quot;role 3 id&quot;
+    ]
+}
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="guildbanadd">guildBanAdd<a class="headerlink" href="#guildbanadd" title="Permanent link">&para;</a></h3>
+<p>Is triggered when a user is banned in the guild.</p>
+<h4>Server side event</h4>
+<div class="highlight"><pre><span></span><code><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;vConnect:guildBanAdd&#39;</span><span class="p">,</span> <span class="p">({</span> <span class="nx">guildId</span><span class="p">,</span> <span class="nx">userInfo</span><span class="p">,</span> <span class="nx">reason</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="p">}</span> <span class="p">);</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>guildId</code></td>
+<td align="center">String</td>
+<td align="center">The ID of the guild the user was banned in</td>
+</tr>
+<tr>
+<td align="center"><code>userInfo</code></td>
+<td align="center">Object</td>
+<td align="center">Object containing info about the user (id and username)</td>
+</tr>
+<tr>
+<td align="center"><code>reason</code></td>
+<td align="center">String</td>
+<td align="center">The reason for the ban</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<h4>Example Code</h4>
+<div class="tabbed-set" data-tabs="11:3"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><label for="__tabbed_11_1">JS</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;vConnect:guildBanAdd&#39;</span><span class="p">,</span> <span class="p">({</span> <span class="nx">guildId</span><span class="p">,</span> <span class="nx">userInfo</span><span class="p">,</span> <span class="nx">reason</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span> 
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">({</span> <span class="nx">guildId</span><span class="p">,</span> <span class="nx">userInfo</span><span class="p">,</span> <span class="nx">reason</span> <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nx">guildId</span><span class="o">:</span> <span class="s2">&quot;*id of the guild*&quot;</span><span class="p">,</span>
+    <span class="nx">userinfo</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">id</span><span class="o">:</span> <span class="s2">&quot;*id of the banned user*&quot;</span><span class="p">,</span>
+        <span class="nx">username</span><span class="o">:</span> <span class="s2">&quot;*the users name*&quot;</span>
+    <span class="p">},</span>
+    <span class="nx">reason</span><span class="o">:</span> <span class="s2">&quot;*reason for the ban*&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><label for="__tabbed_11_2">LUA</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="o">#</span><span class="n">To</span><span class="o">-</span><span class="n">come</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="n">guildId</span><span class="p">:</span> <span class="s2">&quot;*id of the guild*&quot;</span><span class="p">,</span>
+    <span class="n">userinfo</span><span class="p">:</span> <span class="p">{</span>
+        <span class="n">id</span><span class="p">:</span> <span class="s2">&quot;*id of the banned user*&quot;</span><span class="p">,</span>
+        <span class="n">username</span><span class="p">:</span> <span class="s2">&quot;*the users name*&quot;</span>
+    <span class="p">},</span>
+    <span class="n">reason</span><span class="p">:</span> <span class="s2">&quot;*reason for the ban*&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_11_3" name="__tabbed_11" type="radio" /><label for="__tabbed_11_3">C#</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>#To-come
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code>{
+    guildId: &quot;*id of the guild*&quot;,
+    userinfo: {
+        id: &quot;*id of the banned user*&quot;,
+        username: &quot;*the users name*&quot;
+    },
+    reason: &quot;*reason for the ban*&quot;
+}
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="guildbanremove">guildBanRemove<a class="headerlink" href="#guildbanremove" title="Permanent link">&para;</a></h3>
+<p>Is triggered when a user is unbanned in the guild.</p>
+<h4>Server side event</h4>
+<div class="highlight"><pre><span></span><code><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;vConnect:guildBanRemove&#39;</span><span class="p">,</span> <span class="p">({</span> <span class="nx">guildId</span><span class="p">,</span> <span class="nx">userInfo</span><span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="p">}</span> <span class="p">);</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>guildId</code></td>
+<td align="center">String</td>
+<td align="center">The ID of the guild the user was unbanned in</td>
+</tr>
+<tr>
+<td align="center"><code>userInfo</code></td>
+<td align="center">Object</td>
+<td align="center">Object containing info about the user (id and username)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<h4>Example Code</h4>
+<div class="tabbed-set" data-tabs="12:3"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><label for="__tabbed_12_1">JS</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;vConnect:guildBanRemove&#39;</span><span class="p">,</span> <span class="p">({</span> <span class="nx">guildId</span><span class="p">,</span> <span class="nx">userInfo</span><span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span> 
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">({</span> <span class="nx">guildId</span><span class="p">,</span> <span class="nx">userInfo</span><span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nx">guildId</span><span class="o">:</span> <span class="s2">&quot;*id of the guild*&quot;</span><span class="p">,</span>
+    <span class="nx">userinfo</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">id</span><span class="o">:</span> <span class="s2">&quot;*id of the unbanned user*&quot;</span><span class="p">,</span>
+        <span class="nx">username</span><span class="o">:</span> <span class="s2">&quot;*the users name*&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><label for="__tabbed_12_2">LUA</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="o">#</span><span class="n">To</span><span class="o">-</span><span class="n">come</span>
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="n">guildId</span><span class="p">:</span> <span class="s2">&quot;*id of the guild*&quot;</span><span class="p">,</span>
+    <span class="n">userinfo</span><span class="p">:</span> <span class="p">{</span>
+        <span class="n">id</span><span class="p">:</span> <span class="s2">&quot;*id of the unbanned user*&quot;</span><span class="p">,</span>
+        <span class="n">username</span><span class="p">:</span> <span class="s2">&quot;*the users name*&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_12_3" name="__tabbed_12" type="radio" /><label for="__tabbed_12_3">C#</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>#To-come
+</code></pre></div>
+<h4>Output</h4>
+<div class="highlight"><pre><span></span><code>{
+    guildId: &quot;*id of the guild*&quot;,
+    userinfo: {
+        id: &quot;*id of the unbanned user*&quot;,
+        username: &quot;*the users name*&quot;
+    }
+}
+</code></pre></div>
+</div>
+</div>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Information
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../vPerms/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                vPerms
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 - 2021 VikingTheDev
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/VikingTheDev" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://discord.com/users/230347924951793664" target="_blank" rel="noopener" title="discord.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: ['navigation.top', 'navigation.instant', 'navigation.tabs', 'navigation.sections'],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
